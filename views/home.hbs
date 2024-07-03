@@ -1,4 +1,17 @@
 
-{{#each urls}}
-    {{> Card}}
-{{/each}}
+<div class="row mx-auto">
+    <div class="col-sm-8">
+        <h1>Agrega tu URL</h1>
+        {{> Form}}
+    </div>
+</div>
+
+
+<div class="row">
+    {{#each urls}}
+    <div class="col-sm-12 col-md-4 col-lg-4">
+        {{> Card}}
+    </div>
+    {{/each}}
+</div>
+

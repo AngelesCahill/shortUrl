@@ -1,11 +1,10 @@
 
-<div class="card my-4" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+<div class="card my-4 mx-2" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">{{this.origin}}</p>
-        <p class="card-text">{{shortCut}}</p>
-        <a href="#" class="btn btn-danger">Eliminar</a>
+        <p class="card-text">{{this.shortCut}}</p>
+        <a href="/eliminar/{{this._id}}" class="btn btn-danger">Eliminar</a>
         <a href="#" class="btn btn-warning">Editar</a>
         <a href="#" class="btn btn-info">Copiar</a>
     </div>

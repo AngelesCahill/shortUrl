@@ -1,23 +1,9 @@
 import express from "express";
+import { getAllUrl, createUrl, deleteUrl } from "../controllers/Urlcontroller.js";
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    const urls = [{
-        origin: "www.google.com/bluuweb",
-        shortCut: "bluuweb"
-    },
-    {
-        origin: "www.google.com/bluuweb",
-        shortCut: "bluuweb"
-    },
-    {
-        origin: "www.google.com/bluuweb",
-        shortCut: "bluuweb"
-    },
-    ];
-    res.render("home", {
-        urls: urls
-    });
-});
+router.get("/", getAllUrl);
+router.post("/", createUrl);
+router.get("/eliminar/:id", deleteUrl);
 
 export default router;
