@@ -5,6 +5,7 @@ import "./database/configdb.js";
 import homeRouter from "./routes/home.route.js";
 import loginRouter from "./routes/auth.route.js";
 
+
 const app = express();
 
 //config hbs
